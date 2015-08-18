@@ -1,5 +1,5 @@
-from distutils.core import setup
-import google_cookies
+from setuptools import setup, find_packages
+import google_cookies_dump
 
 
 install_requires = [
@@ -8,15 +8,17 @@ install_requires = [
 ]
 
 setup(name='google_cookies_dump',
-      version=google_cookies.__version__,
-      description=google_cookies.__doc__.strip(),
-      author=google_cookies.__author__,
+      version=google_cookies_dump.__version__,
+      description=google_cookies_dump.__doc__.strip(),
+      author=google_cookies_dump.__author__,
       author_email='g.bargelli@gmail.com',
       download_url='https://github.com/proudlygeek/google-cookies-dump',
+      packages=find_packages(),
+      py_modules=['google_cookies_dump'],
       install_requires=install_requires,
       entry_points = {
           'console_scripts': [
-              ['google-cookies = google_cookies.__main__:main']
+              ['google-cookies = google_cookies_dump.__main__:main']
           ]
       }
 )
