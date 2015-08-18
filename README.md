@@ -1,5 +1,5 @@
-🍪 Google Cookie Jar Dumper 🍪
-==============================
+:cookie: Google Cookie Jar Dumper :cookie:
+==========================================
 
 Dumps your *beloved* Google cookies in a *legacy* [cookie jar file format][1].
 
